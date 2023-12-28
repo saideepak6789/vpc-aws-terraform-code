@@ -1,10 +1,3 @@
-variable subnet1-cidr {}
-variable subnet2-cidr {}
-variable subnet3-cidr {}
-variable subnet4-cidr {}
-variable avail_zone1a {}
-variable avail_zone1b {}
-
 resource "aws_subnet" "subnet-1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet1-cidr
