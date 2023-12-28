@@ -7,5 +7,9 @@ resource "aws_nat_gateway" "nat" {
   }
 }  
 resource "aws_eip" "one" {
-  domain                    = "vpc"
+  domain  = "vpc"
+  
+  tags = {
+    Name = "${var.dev}-elastic-ip"
+  }
 }
