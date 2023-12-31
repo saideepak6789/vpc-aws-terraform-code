@@ -1,3 +1,4 @@
+# public subnets - 1a
 resource "aws_subnet" "subnet-1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet-cidr-blocks[0].cidr_block
@@ -7,6 +8,7 @@ resource "aws_subnet" "subnet-1" {
     Name = "${var.dev}-${var.subnet-cidr-blocks[0].name}"
   }
 }
+#private subnets - 1a
 resource "aws_subnet" "subnet-2" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet-cidr-blocks[1].cidr_block
@@ -15,6 +17,7 @@ resource "aws_subnet" "subnet-2" {
     Name = "${var.dev}-${var.subnet-cidr-blocks[1].name}"
   }
 }
+#public subnets - 1b
 resource "aws_subnet" "subnet-3" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet-cidr-blocks[2].cidr_block
@@ -24,6 +27,7 @@ resource "aws_subnet" "subnet-3" {
     Name = "${var.dev}-${var.subnet-cidr-blocks[2].name}"
   }
 }
+#private subnets - 1b
 resource "aws_subnet" "subnet-4" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet-cidr-blocks[3].cidr_block

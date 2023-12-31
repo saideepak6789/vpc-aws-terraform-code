@@ -1,3 +1,4 @@
+#outputs
 output natgatewayid {
   value       = aws_nat_gateway.nat.id
 }
