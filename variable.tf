@@ -1,8 +1,8 @@
 variable dev {}
 variable cidr-vpc {}
-variable subnet1-cidr {}
-variable subnet2-cidr {}
-variable subnet3-cidr {}
-variable subnet4-cidr {}
+variable subnet-cidr {
+  description = "cidr block of Public & Private subnet"
+  type = list(string)
+}
 variable avail_zone1a {}
 variable avail_zone1b {}
