@@ -34,10 +34,7 @@ resource "aws_route_table_association" "pri-assoc" {
   subnet_id      = aws_subnet.subnet-2.id
   route_table_id = aws_route_table.private-rt.id
 }
-
-
 resource "aws_route_table_association" "pri-assoc-1" {
   subnet_id      = aws_subnet.subnet-4.id
   route_table_id = aws_route_table.private-rt.id
 }
-
