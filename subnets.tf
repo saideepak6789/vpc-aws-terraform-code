@@ -1,4 +1,3 @@
-
 resource "aws_subnet" "subnet-1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet-cidr-blocks[0].cidr_block
