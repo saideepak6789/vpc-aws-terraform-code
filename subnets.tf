@@ -1,32 +1,33 @@
+
 resource "aws_subnet" "subnet-1" {
   vpc_id     = aws_vpc.main.id
-  cidr_block = var.subnet-cidr[0]
+  cidr_block = var.subnet-cidr-blocks[0].cidr_block
   availability_zone = var.avail_zone1a
   tags = {
-    Name = "${var.dev}-public-subnet-1a"
+    Name = "${var.dev}-${var.subnet-cidr-blocks[0].name}"
   }
 }
 resource "aws_subnet" "subnet-2" {
   vpc_id     = aws_vpc.main.id
-  cidr_block = var.subnet-cidr[1]
+  cidr_block = var.subnet-cidr-blocks[1].cidr_block
   availability_zone = var.avail_zone1a
   tags = {
-    Name = "${var.dev}-private-subnet-1a"
+    Name = "${var.dev}-${var.subnet-cidr-blocks[1].name}"
   }
 }
 resource "aws_subnet" "subnet-3" {
   vpc_id     = aws_vpc.main.id
-  cidr_block = var.subnet-cidr[2]
+  cidr_block = var.subnet-cidr-blocks[2].cidr_block
   availability_zone = var.avail_zone1b
   tags = {
-    Name = "${var.dev}-public-subnet-1b"
+    Name = "${var.dev}-${var.subnet-cidr-blocks[2].name}"
   }
 }
 resource "aws_subnet" "subnet-4" {
   vpc_id     = aws_vpc.main.id
-  cidr_block = var.subnet-cidr[3]
+  cidr_block = var.subnet-cidr-blocks[3].cidr_block
   availability_zone = var.avail_zone1b
   tags = {
-    Name = "${var.dev}-private-subnet-1b"
+    Name = "${var.dev}-${var.subnet-cidr-blocks[3].name}"
   }
 }
