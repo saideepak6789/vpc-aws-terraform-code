@@ -9,3 +9,5 @@ variable "subnet-cidr-blocks"{
   }
 variable avail_zone1a {}
 variable avail_zone1b {}
+variable myipaddress {}
+

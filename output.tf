@@ -9,3 +9,6 @@ output elasticip{
 output vpcid{
   value = aws_vpc.main.id
 }
+output security{
+  value= aws_security_group.allow_tls.id
+}
