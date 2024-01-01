@@ -8,7 +8,7 @@ subnet-cidr-blocks= [
 	]
 avail_zone1a = "us-east-1a"
 avail_zone1b = "us-east-1b"
-myipaddress = ["122.164.168.230/32"]
+myipaddress = ["122.167.227.248/32"]
 keyname= "sai13-11-2023"
 ins_type="t2.micro"
 avail_zone= "us-east-1a"
