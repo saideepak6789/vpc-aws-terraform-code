@@ -12,3 +12,6 @@ output vpcid{
 output security{
   value= aws_security_group.allow_tls.id
 }
+output public_ip {
+  value       = aws_instance.myapp-ec2.public_ip
+}
